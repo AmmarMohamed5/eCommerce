@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>payment</title>
+</head>
+<body>
+    <center>
+        <form class="form1">
+            <h1>Enter Your Info</h1>
+            <input class="in" type="text" placeholder="UserName" required><br>
+            <input class="in" type="password" placeholder="Password" required><br>
+            <input class="in" type="text" placeholder="Full name" required><br>
+            <input class="in" type="text" placeholder="City" required><br>
+            <input class="in" type="number" min="0" placeholder="num of products" required><br>
+            <input class="orderNow" type="submit" value="order now">
+        </form>
+    </center>
+    <script src="js/main.js"></script>
+    <script>
+        let orderNow = document.querySelector(".orderNow"),
+            input = document.querySelector(".in");
+        orderNow.onclick = ()=>{
+            if(input.value != ""){
+                alert("تم الطلب بنجاح");
+            }else{
+                alert("يجب ادخال المعلومات كاملة");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>checkout</title>
+</head>
+<body>
+    <center>
+        <h1 class="name">your products</h1>
+        <div id="yourProducts">
+            <div class="product">
+                <img class="image"></a>
+                <h1 class="P"></h1>
+                <p class="pr"></p>
+                <button class="pay" class="payment"><a href="payment.html">ادفع</a></button>
+                <button class="pay" onclick="del_1()" class="payment del">احذف</button>
+            </div>
+            <div class="product">
+                <img class="image"></a>
+                <h1 class="P"></h1>
+                <p class="pr"></p>
+                <button class="pay" class="payment"><a href="payment.html">ادفع</a></button>
+                <button class="pay" onclick="del_2()" class="payment del">احذف</button>
+            </div>
+            <div class="product">
+                <img class="image"></a>
+                <h1 class="P"></h1>
+                <p class="pr"></p>
+                <button class="pay" class="payment"><a href="payment.html">ادفع</a></button>
+                <button class="pay" onclick="del_3()" class="payment del">احذف</button>
+            </div>
+            <div class="product">
+                <img class="image"></a>
+                <h1 class="P"></h1>
+                <p class="pr"></p>
+                <button class="pay" class="payment"><a href="payment.html">ادفع</a></button>
+                <button class="pay" onclick="del_4()" class="payment del">احذف</button>
+            </div>
+            <div class="product">
+                <img class="image"></a>
+                <h1 class="P"></h1>
+                <p class="pr"></p>
+                <button class="pay" class="payment"><a href="payment.html">ادفع</a></button>
+                <button class="pay" onclick="del_5()" class="payment del">احذف</button>
+            </div>
+            <div class="product">
+               <img class="image"></a>
+               <h1 class="P"></h1>
+                <p class="pr"></p>
+                <button class="pay" class="payment"><a href="payment.html">ادفع</a></button>
+                <button class="pay" onclick="del_6()" class="payment del">احذف</button>
+            </div>
+        </div>
+    </center>
+    <script src="js/main.js"></script>
+    <script>
+        let P = document.getElementsByClassName("P"),
+            pr = document.getElementsByClassName("pr"),
+            image = document.getElementsByClassName("image"),
+            pay = document.getElementsByClassName("pay");
+        P[0].textContent = localStorage.getItem("name1");
+        P[1].textContent = localStorage.getItem("name2");
+        P[2].textContent = localStorage.getItem("name3");
+        P[3].textContent = localStorage.getItem("name4");
+        P[4].textContent = localStorage.getItem("name5");
+        P[5].textContent = localStorage.getItem("name6");
+        pr[0].textContent = localStorage.getItem("price1");
+        pr[1].textContent = localStorage.getItem("price2");
+        pr[2].textContent = localStorage.getItem("price3");
+        pr[3].textContent = localStorage.getItem("price4");
+        pr[4].textContent = localStorage.getItem("price5");
+        pr[5].textContent = localStorage.getItem("price6");
+        function del_1(){localStorage.removeItem("name1");localStorage.removeItem("price1");localStorage.removeItem("img1");alert("تم ازالة المنتج من السلة");}
+        function del_2(){localStorage.removeItem("name2");localStorage.removeItem("price2");localStorage.removeItem("img2");alert("تم ازالة المنتج من السلة");}
+        function del_3(){localStorage.removeItem("name3");localStorage.removeItem("price3");localStorage.removeItem("img3");alert("تم ازالة المنتج من السلة");}
+        function del_4(){localStorage.removeItem("name4");localStorage.removeItem("price4");localStorage.removeItem("img4");alert("تم ازالة المنتج من السلة");}
+        function del_5(){localStorage.removeItem("name5");localStorage.removeItem("price5");localStorage.removeItem("img5");alert("تم ازالة المنتج من السلة");}
+        function del_6(){localStorage.removeItem("name6");localStorage.removeItem("price6");localStorage.removeItem("img6");alert("تم ازالة المنتج من السلة");}
+        if(localStorage.getItem("img1")){image[0].setAttribute("src",localStorage.getItem("img1"));pay[0].classList.add("active"),pay[1].classList.add("active")}
+        if(localStorage.getItem("img2")){image[1].setAttribute("src",localStorage.getItem("img2"));}
+        if(localStorage.getItem("img3")){image[2].setAttribute("src",localStorage.getItem("img3"));}
+        if(localStorage.getItem("img4")){image[3].setAttribute("src",localStorage.getItem("img4"));} 
+        if(localStorage.getItem("img5")){image[4].setAttribute("src",localStorage.getItem("img5"));}
+        if(localStorage.getItem("img6")){image[5].setAttribute("src",localStorage.getItem("img6"));}
+    </script>
+</body>
+</html>

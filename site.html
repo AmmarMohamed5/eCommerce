@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>تسوق من أي مكان</title>
+</head>
+<body>
+    <nav class="nav1" dir="auto">
+        <div class="left">
+            <img src="images/img.png" alt="logo">
+        </div>
+        <div class="center">
+            <h1><a href="site.html" id="word0">تسوق من أي مكان</a></h1>
+        </div>
+        <div class="right">
+                <button class="btn1" onclick="nav2show()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+        </div>
+        <nav class="nav2">
+            <ul>
+                <li><a href="checkout.html">checkout</a></li>
+                <li><a href="page1.html" id="word1">منتجاتنا</a></li>
+                <li><a href="about.html" id="word2">عن الموقع</a></li>
+                <li><a href="settings.html" id="word3">الإعدادات</a></li>
+            </ul>
+        </nav>
+    </nav>
+    <center>
+        <h1>ابحث عن المنتجات</h1>
+        <form>
+            <div class="search">
+                <input type="search">
+                <input type="submit" value="search">
+            </div>
+        </form>
+        <div class="products">
+            <div class="product">
+                <img src="images/product1.jpg" alt="product1"></a>
+                <h1>laptop dell</h1>
+                <p>300 $</p>
+                <button class="btns btn">اطلب الآن</button>                
+                <button class="btn show">عرض التفاصيل</button>
+            </div>
+            <div class="product">
+                <img src="images/product2.jpg" alt="product1"></a>
+                <h1>laptop hp</h1>
+                <p>400 $</p>
+                <button class="btns btn">اطلب الآن</button>                
+                <button class="btn show">عرض التفاصيل</button>
+            </div>
+            <div class="product">
+                <img src="images/product3.jpg" alt="product1"></a>
+                <h1>laptop toshiba</h1>
+                <p>500 $</p>
+                <button class="btns btn">اطلب الآن</button>                
+                <button class="btn show">عرض التفاصيل</button>
+
+            </div>
+            <div class="product">
+                <img src="images/product4.jpg" alt="product1"></a>
+                <h1>laptop lenovo</h1>
+                <p>600 $</p>
+                <button class="btns btn">اطلب الآن</button>                
+                <button class="btn show">عرض التفاصيل</button>
+            </div>
+            <div class="product">
+                <img src="images/product5.jpg" alt="product1"></a>
+                <h1>laptop ASUS</h1>
+                <p>700 $</p>
+                <button class="btns btn">اطلب الآن</button>                
+                <button class="btn show">عرض التفاصيل</button>
+            </div>
+            <div class="product">
+               <img src="images/product6.jpg" alt="product1"></a>
+                <h1>laptop MacBook</h1>
+                <p>800 $</p>
+                <button class="btns btn">اطلب الآن</button>                
+                <button class="btn show">عرض التفاصيل</button>
+            </div>
+        </div>
+    </center>
+    <script src="js/main.js"></script>
+    <script>
+        products()
+        translate()
+    </script>
+</body>
+</html>
