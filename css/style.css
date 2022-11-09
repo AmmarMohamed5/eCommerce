@@ -1,4 +1,41 @@
 *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui;}
+.nav1{
+    width:100%;
+    height:50px;
+    background-color:#000;
+    position:sticky;
+    top:0;
+    color:#fff;
+}
+.nav1 .left{
+    width:10%;
+    height:50px;
+    float:left;
+}
+.nav1 .left img{
+    width:100%;
+    height:100%;
+    cursor:pointer;
+}
+.nav1 .center{
+    width:45%;
+    height:50px;
+    float:left;
+    padding-top: 5px;
+}
+.nav1 .center h1{
+    text-align:right;
+}
+.nav1 .center h1 a{
+    color:#fff;
+    text-decoration: none;
+}
+.nav1 .right{
+    width:45%;
+    height:50px;
+    float:left;
+    text-align:right;
+}
 .nav1 .right .btn1{
     background-color:#fff;
     width:50px;
@@ -53,43 +90,6 @@
 .nav2.active{
     display:block;
 }
-.nav1{
-    width:100%;
-    height:50px;
-    background-color:#000;
-    position:sticky;
-    top:0;
-    color:#fff;
-}
-.nav1 .left{
-    width:10%;
-    height:50px;
-    float:left;
-}
-.nav1 .left img{
-    width:100%;
-    height:100%;
-    cursor:pointer;
-}
-.nav1 .center{
-    width:45%;
-    height:50px;
-    float:left;
-    padding-top: 5px;
-}
-.nav1 .center h1{
-    text-align:right;
-}
-.nav1 .center h1 a{
-    color:#fff;
-    text-decoration: none;
-}
-.nav1 .right{
-    width:45%;
-    height:50px;
-    float:left;
-    text-align:right;
-}
 .search{
     background-color: grey;
     width:500px;
@@ -114,6 +114,9 @@
     width:300px;
     height:200px;
     margin-top:30px;
+}
+.products .product img{
+    border-radius:15px;
 }
 .btn{
     width:auto;
@@ -241,4 +244,35 @@
 .pay a{
     color:#000;
     text-decoration:none;
+}
+@media (min-width:300px) and (max-width:500px) {
+    .search{
+        width:300px;
+    }
+    .nav1 .left{
+        width:20%;
+    }
+    .nav1 .center{
+        width:50%;
+    }
+    .nav1 .center h1{
+        font-size:19px;
+        margin-top:7px;
+        font-weight:bold;
+    }
+    .nav1 .right{
+        width:30%;
+    }
+    .products .product img{
+        width:100px;
+    }
+    .nav2{
+        width:100%;
+        height:100px;
+        position:fixed;
+        right:0;
+        text-align:center;
+        display:none;
+        top:50px;
+    }
 }
